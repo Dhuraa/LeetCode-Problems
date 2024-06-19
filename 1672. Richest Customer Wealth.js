@@ -19,3 +19,21 @@ var maximumWealth = function (accounts) {
     [3, 2, 1],
   ];
   maximumWealth(accounts);
+
+//Less Efficient apparently
+
+  // var maximumWealth = function (accounts) {
+  //   let arr =[];
+  //   for (let i=0;i<accounts.length;i++){
+  //    arr.push(accounts[i].reduce((acc,currentVal) => {
+  //        return acc + currentVal;
+  //    },0));
+  //   }
+  //   console.log(Math.max(...arr)) 
+  //  };
+   
+  //  accounts = [
+  //    [1, 2, 5],
+  //    [3, 2, 1],
+  //  ];
+  //  maximumWealth(accounts);
