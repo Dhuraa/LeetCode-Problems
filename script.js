@@ -1,12 +1,18 @@
-var findWordsContaining = function(words, x) {
-    let returnArr = [];
-    for (let i=0; i<words.length;i++){
-        if(words[i].includes(x)){
-            returnArr.push(i);
-        }
+var arrayStringsAreEqual = function (word1, word2) {
+    let word1Sum = word1.reduce((acc, sum) => {
+        return acc + sum;
+    })
+    let word2Sum = word2.reduce((acc, sum) => {
+        return acc + sum;
+    })
+    if (word1Sum === word2Sum) {
+        return true;
     }
-    return returnArr;
+    else {
+        return false;
+    }
 };
 
-words = ["abc","bcd","aaaa","cbc"];
-x = "a";
+word1 = ["a", "cb"];
+word2 = ["ab", "c"]
+console.log(arrayStringsAreEqual(word1, word2))
