@@ -1,15 +1,16 @@
-
 var numJewelsInStones = function(jewels, stones) {
-    let output =0;
-    for(let i=0;i<jewels.length;i++){
-        for(let j=0;j<stones.length;j++){
-            if(stones[j] === jewels[i])
-            output++;
+    let arr = [...jewels];
+    let count = 0;
+    for (let i=0;i<stones.length;i++){
+        for (let j=0;j<arr.length;j++){
+            if(stones[i] === arr[j]){
+                count++;
+            }
         }
     }
-    return output;
+    return count;
 };
 
-let jewels =  "z";
-let stones ="ZZ";
-numJewelsInStones(jewels,stones);
+jewels = "ZZ";
+stones = "aAAbbbb";
+numJewelsInStones(jewels,stones)
