@@ -1,4 +1,4 @@
-
+//Revisit again
 var sortPeople = function(names, heights) {
     let details = [];
     let output = [];
@@ -16,5 +16,3 @@ var sortPeople = function(names, heights) {
 let names = ["Mary","John","Emma"];
 let heights = [180,165,170];
 sortPeople(names, heights);
-
-
