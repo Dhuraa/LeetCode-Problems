@@ -1,23 +1,24 @@
-console.log("hi");
-
 var countMatches = function (items, ruleKey, ruleValue) {
-  let counter = 0;
-  let ind;
-  let temp = ["type", "color", "name"];
-  for (let i = 0; i < temp.length; i++) {
-    if(temp[i] == ruleKey){
-      ind = i;
-    }
+  let itemCom = ["type", "color", "name"];
+  let ind = 0;
+  let count = 0;
+
+  for (let i = 0; i < itemCom.length; i++) {
+      if (itemCom[i] === ruleKey) {
+          ind = i;
+      }
   }
+
   for (let i = 0; i < items.length; i++) {
-   if(items[i][ind] == ruleValue){
-    counter++;
-   }
+      if (items[i][ind] === ruleValue) {
+          count++;
+      }
   }
-  return counter;
+
+  return count;
 };
 
-let items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]];
+let items = [["phone", "blue", "pixel"], ["computer", "silver", "lenovo"], ["phone", "gold", "iphone"]];
 let ruleKey = "color";
 let ruleValue = "silver";
 countMatches(items, ruleKey, ruleValue);
