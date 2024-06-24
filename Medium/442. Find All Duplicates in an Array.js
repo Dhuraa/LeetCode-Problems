@@ -1,3 +1,5 @@
+//Frequency Counter
+
 var findDuplicates = function(nums) {
     let frequency = {};
     let output = [];
