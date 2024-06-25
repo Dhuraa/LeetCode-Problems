@@ -11,6 +11,3 @@ var pivotInteger = function(n) {
     }
     return -1;
 };
-
-let n=8;
-console.log(pivotInteger(n));
