@@ -14,4 +14,3 @@ var countKDifference = function(nums, k) {
 let nums = [3,2,1,5,4];
 let k = 2;
 countKDifference(nums,k);
-
