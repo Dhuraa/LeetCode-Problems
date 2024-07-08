@@ -1,3 +1,5 @@
+//Revisit Again: To reduce time complexity
+
 var sumOfTheDigitsOfHarshadNumber = function(x) {
     let arr = x.toString().split('');
     let arrSum = arr.reduce((acc,val) => parseInt(acc)+parseInt(val) );
